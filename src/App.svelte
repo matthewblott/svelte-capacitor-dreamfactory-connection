@@ -1,7 +1,5 @@
 <script>
-  import { onMount } from "svelte";
-
-  let base_url = "http://localhost:8000/api/v2";
+  let base_url = "http://10.0.2.2:8000/api/v2";
 
   const login = async (email, password) => {
     const headers = new Headers({
@@ -36,10 +34,6 @@
 
     console.log(res);
   };
-
-  onMount(() => {
-    //
-  });
 </script>
 
 <main>
